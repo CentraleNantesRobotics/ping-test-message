@@ -8,6 +8,5 @@ add_executable(ping_test
   lib/device/ping-port-linux.cpp
   lib/device/ping-time-linux.cpp
   lib/device/ping-device.cpp
-  lib/device/ping-device-ping1d.cpp
   src/main.cpp
 )

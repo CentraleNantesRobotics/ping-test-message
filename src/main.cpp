@@ -35,8 +35,7 @@ int main(){
       settingsData.set_number_of_samples(1200);
       settingsData.set_transmit(1);
       sonar.writeMessage(settingsData);
-      sonar.waitMessage(2601, 4000); 
-      std::cout
+      sonar.waitMessage(2601, 4000);
       std::cout << i << std::endl;
     }
     // sonar.writeMessage(settings);

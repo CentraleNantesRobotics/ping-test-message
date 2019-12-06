@@ -7,7 +7,7 @@
 
 
 int main(){
-    const char* port = "/dev/ttyS3";
+    const char* port = "/dev/ttyUSB0";
     PingPortLinux sonarPort = PingPortLinux(port);
     PingDevice sonar = PingDevice(sonarPort);
 
@@ -36,8 +36,6 @@ int main(){
       settingsData.set_transmit(1);
       sonar.writeMessage(settingsData);
       sonar.waitMessage(2601, 4000); 
-      std::cout
-      std::cout << i << std::endl;
     }
     // sonar.writeMessage(settings);
 
